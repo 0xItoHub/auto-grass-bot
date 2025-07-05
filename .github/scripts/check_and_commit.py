@@ -77,16 +77,14 @@ def make_auto_commit():
         f.write(f"🌱 Auto grass commit at {timestamp}\n")
 
     # Git設定
-    subprocess.run(
-        ["git", "config", "--global", "user.name", "github-actions[bot]"], check=True
-    )
+    subprocess.run(["git", "config", "--global", "user.name", "0xItoHub"], check=True)
     subprocess.run(
         [
             "git",
             "config",
             "--global",
             "user.email",
-            "41898282+github-actions[bot]@users.noreply.github.com",
+            "154758787+0xItoHub@users.noreply.github.com",
         ],
         check=True,
     )
